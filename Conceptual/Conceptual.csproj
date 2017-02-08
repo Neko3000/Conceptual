@@ -201,13 +201,26 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201702080649184_InitialDatabaseCreation.cs" />
+    <Compile Include="Migrations\201702080649184_InitialDatabaseCreation.Designer.cs">
+      <DependentUpon>201702080649184_InitialDatabaseCreation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\ApplicationDbContext\Configuration.cs" />
+    <Compile Include="Migrations\ConceptualDbContext\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\Article.cs" />
+    <Compile Include="Models\ArticleCategory.cs" />
+    <Compile Include="Models\ConceptualDbContext.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\ConceptualDbContext.mdf" />
+    <Content Include="App_Data\ConceptualDbContext_log.ldf">
+      <DependentUpon>ConceptualDbContext.mdf</DependentUpon>
+    </Content>
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
@@ -278,13 +291,16 @@
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="App_Data\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201702080649184_InitialDatabaseCreation.resx">
+      <DependentUpon>201702080649184_InitialDatabaseCreation.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

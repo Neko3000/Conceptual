@@ -80,3 +80,5 @@ H:\VisualStudioProjects\ASP.NET\Conceptual\Conceptual\bin\Microsoft.Owin.Securit
 H:\VisualStudioProjects\ASP.NET\Conceptual\Conceptual\obj\Debug\Conceptual.csprojResolveAssemblyReference.cache
 H:\VisualStudioProjects\ASP.NET\Conceptual\Conceptual\obj\Debug\Conceptual.dll
 H:\VisualStudioProjects\ASP.NET\Conceptual\Conceptual\obj\Debug\Conceptual.pdb
+H:\VisualStudioProjects\ASP.NET\Conceptual\Conceptual\obj\Debug\Conceptual.Migrations.ConceptualDbContext.InitialDatabaseCreation.resources
+H:\VisualStudioProjects\ASP.NET\Conceptual\Conceptual\obj\Debug\Conceptual.csproj.GenerateResource.Cache
