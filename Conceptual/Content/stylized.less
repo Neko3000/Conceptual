@@ -5,11 +5,24 @@ body {
 
 @Gray:  #3c3c3c;
 @Rose:  #fc2887;
+@Navy: #17184b;
+
+//text-color
+@GrayNormal:  #1c1c1c;
+@GrayLighter1: #838383;
+@GrayLighter2: #9b9b9b;
 
 @font-face {
     font-family: "Myriad Pro";
     src: url('/Content/fonts/MyriadPro-Regular.otf') format('truetype');
     font-weight: 200;
+}
+
+h1,h2,h3,h4,h5,p,span,time{
+    margin:0 0;
+
+    letter-spacing:0.05em;
+    line-height:1.2;
 }
 
 .tpm-240{
@@ -44,6 +57,10 @@ body {
     position:relative;
 }
 
+.body-container{
+    padding:101px 0 105px 0;
+}
+
 .mbtn {
     opacity: 1;
 
@@ -74,6 +91,30 @@ body {
     }
 }
 
+.mbtn-trans {
+    display:inline-block;
+    position:relative;
+    >img:nth-child(1){
+
+    }
+    >img:nth-child(2){
+        opacity:1;
+    }
+    &:hover > img:nth-child(2){
+        opacity:0;
+    }
+    > img:nth-child(2) {
+        position:absolute;
+        left:0;
+        top:0;
+
+        -moz-transition: opacity ease 0.7s;
+        -o-transition: opacity ease 0.7s;
+        -webkit-transition: opacity ease 0.7s;
+        transition: opacity ease 0.7s;
+    }
+}
+
 .mbtn-gray{
     background-color:@Gray;
 }
@@ -81,8 +122,114 @@ body {
     background-color:@Rose;
 }
 
+.navbar-glass {
+    padding:43px 0;
+    background-color: transparent;
+
+    .navbar-header{
+        button{
+            span{
+                background-color:white;
+            }
+        }
+        .brand-sign{
+            width:36px;
+            height:36px;
+
+            margin:0 24px 0 57px;
+            >img{
+                position:relative;
+                top:9px;
+            }
+        }
+    }
+
+
+     ul {
+        > li {
+            opacity: 0.6;
+
+            -moz-transition: opacity ease 0.7s;
+            -o-transition: opacity ease 0.7s;
+            -webkit-transition: opacity ease 0.7s;
+            transition: opacity ease 0.7s;
+            &:hover{
+                    opacity:1;
+            }
+
+            > a {
+                color:white;
+
+                margin:0 0;
+                padding: 11px 28px;
+                background-color: transparent;
+                font-family: "Myriad Pro";
+                font-size: 16px;
+                &:hover{
+                      background-color: transparent;
+                }
+            }
+        }
+    }
+    @media(max-width:768px){
+        padding:0 0;
+        .navbar-header{
+            .brand-sign{
+                margin:7px 7px;
+                padding:7px 10px;
+                >img{
+                    top:0;
+                    left:0;
+                }
+            }
+        }
+
+    }
+}
+//head
+.head-area{
+    height:1082px;
+    background-image:url("/Content/img/page/layout/board-bg.png");
+    background-position:center;
+}
+//footer
+footer{
+    position:relative;
+    height:259px;
+    background-image:url("/Content/img/page/layout/footer-gradient-line.png");
+    background-position:center;
+    .mbtn-trans{
+        margin:77px 0 33px 0;
+    }
+    .constructor{
+
+        p{
+            color:#a2a3b7;
+            font-family:'Myriad Pro',Arial;
+            text-align:center;
+            
+            margin-bottom:9px;
+
+            line-height:1;
+        }
+        >p>span{
+            line-height:1;
+            color:white;
+        }
+        .prime{
+            font-size:16px;
+        }
+        .sub-prime{
+            font-size:14px;
+        }
+    }
+}
+
 //welcome
 .datalized-bird{
+    width:311px;
+    height:329px;
+
     position:absolute;
     margin:0 50%;
 
@@ -90,4 +237,76 @@ body {
 }
 .datalized-bird-box{
     height:329px;
+}
+
+//article
+.bg-navy{
+    background-color:@Navy;
+}
+
+.single-article-block{
+    position:relative;
+    padding:1px 8px;
+
+    height:360px;
+    width:263px;
+
+    background-color:white;
+    text-align:left;
+    >.pin{
+        position:absolute;
+
+        left:12px;
+        top:15px;
+    }
+    >.cover-img-box{
+        position:absolute;
+
+        top:67px;
+        left:8px;
+        >img{
+            width:247px;
+            height:99px;
+        }
+    }
+    >.title-box{
+        height:51px;
+        position:absolute;
+
+        top:189px;
+        left:8px;
+        a{
+            text-decoration:none;
+            &:hover{
+                text-decoration:underline;
+            }
+        }
+        h3{
+            font-family:'Microsoft YaHei';
+            font-size:16px;
+            color:@GrayNormal;
+        }
+    }
+    >.short-description-box{
+        position:absolute;
+
+        top:261px;
+        left:8px;
+        >p{
+            font-family:'Microsoft YaHei';
+            font-size:12px;
+            color:@GrayLighter1;
+        }
+    }
+    >.category-time-box{
+        position:absolute;
+
+        bottom:12px;
+        right:8px;
+        >time{
+            font-family:'Microsoft YaHei';
+            font-size:12px;
+            color:@GrayLighter2;
+        }
+    }
 }

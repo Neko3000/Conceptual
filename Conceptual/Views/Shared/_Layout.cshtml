@@ -9,33 +9,44 @@
 
 </head>
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
-            </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                    <li>@Html.ActionLink("About", "About", "Home")</li>
-                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
-                </ul>
-                @Html.Partial("_LoginPartial")
-            </div>
+    <div class="head-area">
+        <div class="navbar navbar-glass">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <div class="brand-sign">
+                        <img src="~/Content/img/page/layout/heart.png" />
+                    </div>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li>@Html.ActionLink("Article", "Index", "Article")</li>
+                        <li>@Html.ActionLink("Collection", "About", "Home")</li>
+                        <li>@Html.ActionLink("Resource", "Contact", "Home")</li>
+                        <li>@Html.ActionLink("About", "Contact", "Home")</li>
+                    </ul>
+                </div>
         </div>
     </div>
-    <div class="container body-content">
+    <div class="body-area">
         @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
-        </footer>
+
     </div>
+    <footer class="footer-area center-container">
+        <a href="">
+            <div class="mbtn-trans">
+                <img src="~/Content/img/page/layout/btn-more2.png" />
+                <img src="~/Content/img/page/layout/btn-more1.png" />
+            </div>
+        </a>
+        <div class="constructor center-object">
+            <p class="prime">Constructed by <span>Neko3000</span></p>
+            <p class="sub-prime">And this has been blessed by <span>Inari Ōkami</span></p>
+        </div>
+    </footer>
 
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")

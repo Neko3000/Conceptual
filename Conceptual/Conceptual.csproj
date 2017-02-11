@@ -196,13 +196,14 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\ArticleController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201702080649184_InitialDatabaseCreation.cs" />
-    <Compile Include="Migrations\201702080649184_InitialDatabaseCreation.Designer.cs">
+    <Compile Include="Migrations\ConceptualDbContext\201702080649184_InitialDatabaseCreation.cs" />
+    <Compile Include="Migrations\ConceptualDbContext\201702080649184_InitialDatabaseCreation.Designer.cs">
       <DependentUpon>201702080649184_InitialDatabaseCreation.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\ApplicationDbContext\Configuration.cs" />
@@ -225,10 +226,18 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
-    <Content Include="Content\img\page\welcome\Datalized bird2.png" />
+    <Content Include="Content\font-awesome.css" />
+    <Content Include="Content\font-awesome.min.css" />
+    <Content Include="Content\img\page\article\mg-ae.png" />
+    <Content Include="Content\img\page\article\pin.png" />
+    <Content Include="Content\img\page\layout\board-bg.png" />
+    <Content Include="Content\img\page\layout\btn-more1.png" />
+    <Content Include="Content\img\page\layout\btn-more2.png" />
+    <Content Include="Content\img\page\layout\footer-gradient.png" />
+    <Content Include="Content\img\page\layout\footer-gradient-line.png" />
+    <Content Include="Content\img\page\layout\heart.png" />
+    <Content Include="Content\img\page\layout\split-line.png" />
     <Content Include="Content\img\page\welcome\Datalized bird.png" />
-    <Content Include="Content\img\page\welcome\Datalized bird3.png" />
-    <Content Include="Content\img\page\welcome\Datalized bird4.png" />
     <Content Include="Content\stylized.css">
       <DependentUpon>stylized.less</DependentUpon>
     </Content>
@@ -236,6 +245,7 @@
       <DependentUpon>stylized.css</DependentUpon>
     </Content>
     <Content Include="favicon.ico" />
+    <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
@@ -256,6 +266,11 @@
       <DependentUpon>compilerconfig.json</DependentUpon>
     </None>
     <Content Include="Content\fonts\MyriadPro-Regular.otf" />
+    <Content Include="fonts\FontAwesome.otf" />
+    <Content Include="fonts\fontawesome-webfont.woff2" />
+    <Content Include="fonts\fontawesome-webfont.woff" />
+    <Content Include="fonts\fontawesome-webfont.ttf" />
+    <Content Include="fonts\fontawesome-webfont.eot" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -308,6 +323,7 @@
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Home\Welcome.cshtml" />
     <Content Include="Views\Shared\_LayoutInvisible.cshtml" />
+    <Content Include="Views\Article\Index.cshtml" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
@@ -316,7 +332,7 @@
     <Content Include="Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201702080649184_InitialDatabaseCreation.resx">
+    <EmbeddedResource Include="Migrations\ConceptualDbContext\201702080649184_InitialDatabaseCreation.resx">
       <DependentUpon>201702080649184_InitialDatabaseCreation.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
