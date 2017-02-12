@@ -230,7 +230,6 @@
     <Content Include="Content\font-awesome.min.css" />
     <Content Include="Content\img\page\article\mg-ae.png" />
     <Content Include="Content\img\page\article\pin.png" />
-    <Content Include="Content\img\page\layout\board-bg.png" />
     <Content Include="Content\img\page\layout\board-effiel.png" />
     <Content Include="Content\img\page\layout\btn-more-hover_1.png" />
     <Content Include="Content\img\page\layout\btn-more-hover_2x.png" />
