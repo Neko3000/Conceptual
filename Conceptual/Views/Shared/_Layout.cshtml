@@ -10,7 +10,8 @@
 </head>
 <body>
     <div class="head-area">
-        <div class="navbar navbar-glass">
+        <div class="board">
+            <div class="navbar navbar-glass">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                         <span class="icon-bar"></span>
@@ -18,7 +19,7 @@
                         <span class="icon-bar"></span>
                     </button>
                     <div class="brand-sign">
-                        <img src="~/Content/img/page/layout/heart.png" />
+                        <img onload="this.width/=2;this.onload=null;" src="~/Content/img/page/layout/heart_2x.png" />
                     </div>
                 </div>
                 <div class="navbar-collapse collapse">
@@ -30,21 +31,26 @@
                     </ul>
                 </div>
         </div>
+        </div>
+        <div class="split-line"></div>
     </div>
     <div class="body-area">
         @RenderBody()
 
     </div>
     <footer class="footer-area center-container">
-        <a href="">
-            <div class="mbtn-trans">
-                <img src="~/Content/img/page/layout/btn-more2.png" />
-                <img src="~/Content/img/page/layout/btn-more1.png" />
+        <div class="split-line"></div>
+        <div class="footer-info">
+            <a href="">
+                <div class="mbtn-trans">
+                    <img onload="this.width/=2;this.onload=null;" src="~/Content/img/page/layout/btn-more-hover_2x.png" />
+                    <img onload="this.width/=2;this.onload=null;" src="~/Content/img/page/layout/btn-more_2x.png" />
+                </div>
+            </a>
+            <div class="constructor center-object">
+                <p class="prime">Constructed by <span>Neko3000</span></p>
+                <p class="sub-prime">And this has been blessed by <span>Inari Ōkami</span></p>
             </div>
-        </a>
-        <div class="constructor center-object">
-            <p class="prime">Constructed by <span>Neko3000</span></p>
-            <p class="sub-prime">And this has been blessed by <span>Inari Ōkami</span></p>
         </div>
     </footer>
 
