@@ -239,7 +239,6 @@
     <Content Include="Content\img\page\layout\btn-more_1x.png" />
     <Content Include="Content\img\page\layout\btn-more_2x.png" />
     <Content Include="Content\img\page\layout\footer-gradient.png" />
-    <Content Include="Content\img\page\layout\footer-gradient-line.png" />
     <Content Include="Content\img\page\layout\heart.png" />
     <Content Include="Content\img\page\layout\heart_1x.png" />
     <Content Include="Content\img\page\layout\heart_2x.png" />
