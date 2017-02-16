@@ -8,8 +8,14 @@ namespace Conceptual.Controllers
 {
     public class ArticleController : Controller
     {
-        // GET: Article
+        // GET: Article List
         public ActionResult Index()
+        {
+            return View();
+        }
+
+        // GET: Article Detail
+        public ActionResult Detail()
         {
             return View();
         }

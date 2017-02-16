@@ -94,6 +94,7 @@ h1,h2,h3,h4,h5,p,span,time{
 .mbtn-trans {
     display:inline-block;
     position:relative;
+    line-height:1;
 
     >img:nth-child(1){
 
@@ -146,6 +147,9 @@ h1,h2,h3,h4,h5,p,span,time{
 
             margin:0 24px 0 57px;
             >img{
+                width:19px;
+                height:16px;
+
                 position:relative;
                 top:9px;
             }
@@ -215,11 +219,15 @@ h1,h2,h3,h4,h5,p,span,time{
 footer{
     position:relative;
     height:259px;
-    background-image:url("/Content/img/page/layout/footer-gradient-line.png");
+    background-image:url("/Content/img/page/layout/footer-gradient.png");
     background-position:center;
 
     .mbtn-trans{
         margin:75px 0 33px 0;
+        img{
+            width:100px;
+            height:39px;
+        }
     }
     .constructor{
         padding:0 20px;
@@ -262,6 +270,9 @@ footer{
 //article
 .bg-navy{
     background-color:@Navy;
+}
+.bg-white{
+    background-color:white;
 }
 
 .single-article-block{
@@ -327,6 +338,76 @@ footer{
             font-family:'Microsoft YaHei';
             font-size:12px;
             color:@GrayLighter2;
+        }
+    }
+}
+
+.cover-round {
+    display: inline-block;
+    width:85px;
+    height:85px;
+
+    -moz-border-radius:50% 50%;
+    -webkit-border-radius: 50% 50%;
+    border-radius:50% 50%;
+
+    overflow:hidden;
+}
+
+.article{
+    padding:48px 6% 23px 6%;
+    .article-header{
+        margin-bottom:103px;
+        .article-info-box{
+            display:inline-block;
+
+            .article-title{
+                margin-top:30px;
+                h2{
+                    text-align:center;
+                    font-family:'Microsoft YaHei',Arial;
+                    font-size:18px;
+                    color:#252525;
+                }
+            }
+            .article-short-description{
+                margin-top:13px;
+                p{
+                    text-align:left;
+                    font-family:'Microsoft YaHei',Arial;
+                    font-size:12px;
+                    color:#838383;
+                }
+            }
+            .article-time{
+                margin-top:11px;
+                time{
+                    display:block;
+
+                    text-align:right;
+                    font-family:'Microsoft YaHei',Arial;
+                    font-size:12px;
+                    color:#9b9b9b;
+                }
+            }
+
+        }
+    }
+    .article-body{
+        margin-bottom:117px;
+        p{
+            text-align:left;
+            font-family:'Microsoft YaHei',Arial;
+            font-size:14px;
+            color:#252525;
+        }
+    }
+    .article-footer{
+        .mbtn-trans{
+            img{
+                width:57px;
+                height:21px;
+            }
         }
     }
 }
