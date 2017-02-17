@@ -1,0 +1,77 @@
+[33mcommit d5c733a8cdf4a755aa70c986f28b7ca172406dd6[m
+Author: Neko3000 <Neko3000@live.com>
+Date:   Thu Feb 16 15:14:42 2017 +0900
+
+    built article detail page
+
+[33mcommit f3d5549ee9270886f9d8c3cf1a9f29b328eec58c[m
+Author: Neko3000 <Neko3000@live.com>
+Date:   Sun Feb 12 15:08:01 2017 +0900
+
+    clear resource in content
+
+[33mcommit 5fe4c1db8abd638ad80e45cffc0cf7f561eb2c79[m
+Author: Neko3000 <Neko3000@live.com>
+Date:   Sun Feb 12 15:03:02 2017 +0900
+
+    reseted config
+
+[33mcommit 88633930449f3e7132dff1ca409823da22975800[m
+Author: Neko3000 <Neko3000@live.com>
+Date:   Sun Feb 12 14:58:10 2017 +0900
+
+    replaced pictures with 2x
+
+[33mcommit 2aa3223e0ef5a0f6e3e00f20d3449ca0a5d98daf[m
+Author: Neko3000 <Neko3000@live.com>
+Date:   Sun Feb 12 03:40:05 2017 +0900
+
+    fixed .otf static content
+
+[33mcommit 9ca23a005bedbd16f46f81123ebc880bcfcf994c[m
+Author: Neko3000 <Neko3000@live.com>
+Date:   Sun Feb 12 03:29:02 2017 +0900
+
+    built article index
+
+[33mcommit 424f1c35af9d1d4c81c1ebd1c1ea6832a4f982b8[m
+Author: Neko3000 <Neko3000@live.com>
+Date:   Thu Feb 9 14:35:41 2017 +0900
+
+    welcome page image resolution testing
+
+[33mcommit 39d80e1a4c129552d7928cd4cee4fd805547c1fc[m
+Author: Neko3000 <Neko3000@live.com>
+Date:   Thu Feb 9 00:03:12 2017 +0900
+
+    built welcome page
+
+[33mcommit de9c82ba11e8895ff13f680d3b5971cc7dfadd91[m
+Author: Neko3000 <Neko3000@live.com>
+Date:   Wed Feb 8 17:02:32 2017 +0900
+
+    Basic data updated
+
+[33mcommit 47dd4e7ab26ce636958074be72a36f538204aa04[m
+Author: Neko3000 <Neko3000@live.com>
+Date:   Wed Feb 8 16:17:20 2017 +0900
+
+    sql-test
+
+[33mcommit 63c04ca9c2303574139ca109caecd259c5b227ca[m
+Author: Neko3000 <Neko3000@live.com>
+Date:   Wed Feb 8 15:58:19 2017 +0900
+
+    bulit basic database
+
+[33mcommit 556bebad43c6bdd650ed5d70698cab227a7f575e[m
+Author: Neko3000 <Neko3000@live.com>
+Date:   Mon Feb 6 22:39:11 2017 +0900
+
+    version 0.1
+
+[33mcommit be20d9f238d8be266ee96d8cf52a3f1ecbc54486[m
+Author: Neko3000 <Neko3000@live.com>
+Date:   Mon Feb 6 22:17:24 2017 +0900
+
+    basic instruction

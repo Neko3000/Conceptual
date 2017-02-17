@@ -334,3 +334,56 @@ footer .constructor .sub-prime {
   width: 57px;
   height: 21px;
 }
+.single-tutor-category-block {
+  padding: 20px 0px;
+  min-height: 425px;
+  margin-bottom: 100px;
+}
+.single-tutor-category-block:last-child {
+  margin-bottom: 0;
+}
+.single-tutor-category-block .tutor-category-header {
+  padding: 20px 87px;
+}
+.single-tutor-category-block .tutor-category-header .tutor-category-img {
+  margin-bottom: 32px;
+}
+.single-tutor-category-block .tutor-category-header .tutor-category-img img {
+  width: 52px;
+  height: 82px;
+}
+.single-tutor-category-block .tutor-category-header .tutor-category-title {
+  margin-bottom: 20px;
+}
+.single-tutor-category-block .tutor-category-header .tutor-category-title h2 {
+  text-align: center;
+  font-family: 'Microsoft YaHei', Arial;
+  font-size: 14px;
+  color: #5a5a5a;
+}
+.single-tutor-category-block .tutor-category-header .tutor-category-description p {
+  text-align: center;
+  font-family: 'Microsoft YaHei', Arial;
+  font-size: 12px;
+  color: #7a7a7a;
+}
+.single-tutor-category-block .tutor-category-body {
+  padding: 25px 46px 25px 19px;
+}
+.single-tutor-category-block .tutor-category-body .single-tutor {
+  margin-bottom: 32px;
+}
+.single-tutor-category-block .tutor-category-body .single-tutor h2 {
+  margin-bottom: 14px;
+  font-family: 'Microsoft YaHei', Arial;
+  font-size: 14px;
+  color: #252525;
+}
+.single-tutor-category-block .tutor-category-body .single-tutor p {
+  font-family: 'Microsoft YaHei', Arial;
+  font-size: 12px;
+  color: #838383;
+}
+.single-tutor-category-block .tutor-category-body .single-tutor:last-child {
+  margin-bottom: 0;
+}
