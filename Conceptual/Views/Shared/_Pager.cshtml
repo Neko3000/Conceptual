@@ -1,0 +1,19 @@
+﻿@model Conceptual.ViewModels.PagerPartialViewModel
+
+<div class="row center-container">
+    <div class="mpager center-object">
+        <div class="mpager-arrow-left @(Model.CurrentPage-2>=1?"":"transparent-object")">
+            <img src="~/Content/img/page/article/arrow-left_2x.png" />
+        </div>
+        <div class="mpager-num @(Model.CurrentPage-2>=1?"":"transparent-object") "><a href="#">@(Model.CurrentPage - 2)</a></div>
+        <div class="mpager-num @(Model.CurrentPage-1>=1?"":"transparent-object")"><a href="#">@(Model.CurrentPage - 1)</a></div>
+        <div class="mpager-center-img">
+            <img src="~/Content/img/page/article/btn-page_2x.png" />
+        </div>
+        <div class="mpager-num @(Model.CurrentPage+1<=Model.TotalPage?"":"transparent-object")"><a href="#">@(Model.CurrentPage + 1)</a></div>
+        <div class="mpager-num @(Model.CurrentPage+2<=Model.TotalPage?"":"transparent-object")"><a href="#">@(Model.CurrentPage + 2)</a></div>
+        <div class="mpager-arrow-right">
+            <img src="~/Content/img/page/article/arrow-right_2x.png" />
+        </div>
+    </div>
+</div>

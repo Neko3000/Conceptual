@@ -37,6 +37,9 @@ time {
 .center-object {
   margin: 0 auto;
 }
+.transparent-object {
+  opacity: 0;
+}
 .overflow-hidden-container {
   overflow: hidden;
 }
@@ -215,6 +218,47 @@ footer .constructor .sub-prime {
 }
 .bg-white {
   background-color: white;
+}
+.mpager {
+  margin-top: 103px;
+  display: inline-block;
+}
+.mpager .mpager-arrow-left {
+  padding: 10px 22px;
+  display: inline-block;
+  margin-right: 10px;
+}
+.mpager .mpager-arrow-left img {
+  width: 9px;
+  height: 17px;
+}
+.mpager .mpager-arrow-right {
+  padding: 10px 22px;
+  display: inline-block;
+  margin-left: 10px;
+}
+.mpager .mpager-arrow-right img {
+  width: 9px;
+  height: 17px;
+}
+.mpager .mpager-num {
+  display: inline-block;
+  padding: 11px 23px;
+}
+.mpager .mpager-num a {
+  position: relative;
+  top: 1px;
+  font-family: 'Myriad Pro', Arial;
+  font-size: 16px;
+  color: white;
+}
+.mpager .mpager-center-img {
+  padding: 0 10px;
+  display: inline-block;
+}
+.mpager .mpager-center-img img {
+  width: 37px;
+  height: 37px;
 }
 .single-article-block {
   position: relative;
