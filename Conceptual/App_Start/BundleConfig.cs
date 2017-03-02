@@ -80,6 +80,7 @@ namespace Conceptual
 
                       "~/Content/bracket/js/custom.js"
                       ));
+                BundleTable.EnableOptimizations = true;
         }
     }
 }
