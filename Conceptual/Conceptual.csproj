@@ -231,6 +231,10 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\ApplicationDbContext.mdf" />
+    <Content Include="App_Data\ApplicationDbContext_log.ldf">
+      <DependentUpon>ApplicationDbContext.mdf</DependentUpon>
+    </Content>
     <Content Include="App_Data\ConceptualDbContext.mdf" />
     <Content Include="App_Data\ConceptualDbContext_log.ldf">
       <DependentUpon>ConceptualDbContext.mdf</DependentUpon>
