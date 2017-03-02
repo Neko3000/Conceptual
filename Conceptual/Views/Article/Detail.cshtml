@@ -1,4 +1,5 @@
-﻿
+﻿@model Conceptual.ViewModels.ArticleDetailViewModel
+
 @{
     ViewBag.Title = "Detail";
 }
@@ -11,49 +12,29 @@
                     <div class="article-info-box center-object">
                         <div class="center-container">
                             <div class="cover-round center-object">
-                                <img src="~/Content/img/page/article/mg-ae.png" />
+                                <img src="@Model.CoverImgUrl" />
                             </div>
                         </div>
                         <div class="article-title">
-                            <h2>How to create Motion Graphics with Adobe AfterEffects?</h2>
+                            <h2>@Model.Title</h2>
                         </div>
                         <div class="article-short-description">
-                            <p>The tutorial for learning techniques in Motion Graphics.</p>
+                            <p>@Model.ShortDescription</p>
                         </div>
                         <div class="article-time">
-                            <time>2017.1.12</time>
+                            <time>@Model.PostTime.ToShortDateString()</time>
                         </div>
                     </div>
 
                 </div>
                 <div class="article-body">
                     <p>
-                        Scope of the term<br />
-                        <br />
-                        Motion graphics extend beyond the most commonly used methods of frame-by-frame footage and animation. Motion graphics can be distinguished from typical animation in that they are not strictly character driven or story based and often represent animated abstract shapes and forms such as logos or logo elements.<br />
-                        <br /><br />
-                        History of the term<br />
-                        <br />
-                        Since there is no universally accepted definition of motion graphics, the official beginning of the art form is disputed. There have been presentations that could be classified as motion graphics as early as the 1800s. Michael Betancourt wrote the first in depth historical survey of the field, arguing for its foundations in visual music and the historical abstract films of the 1920s by Walther Ruttmann, Hans Richter, Viking Eggeling and Oskar Fischinger.[2]<br />
-
-                        The history of motion graphics is closely related to the history of Computer Graphics as the new developments of computer generated graphics led to a wider use of motion design not based on optical film animation. The term motion graphics originated with digital video editing in computing, perhaps to keep pace with newer technology. Graphics for television were originally referred to as Broadcast Design.<br />
-
-                        One of the first uses of the term "motion graphics" was by animator John Whitney, who in 1960 founded a company called Motion Graphics Inc.[3]<br />
-
-                        Saul Bass is a major pioneer in the development of feature film title sequences. His work included title sequences for popular films such as The Man With The Golden Arm (1955), Vertigo (1958), Anatomy of a Murder (1959), North by Northwest (1959), Psycho (1960), and Advise & Consent (1962). His designs were simple, but effectively communicated the mood of the film.[4]<br />
-                        <br /><br />
-                        Computer-generated motion graphics<br />
-                        <br />
-                        Before computers were widely available, motion graphics were costly and time-consuming, limiting their use to high-budget filmmaking and television production. Computers began to be used as early as the late 1960s as super computers were capable of rendering crude graphics. John Whitney and Charles Csuri can be considered early pioneers of computer aided animation.[5] [6]<br />
-
-                        In the late 1980s to mid-1990s, expensive proprietary graphics systems such as those from British-based Quantel were quite commonplace in many television stations. Quantel workstations such as the Hal, Henry, Harry, Mirage and Paintbox were the broadcast graphics standard of the time. Many other real time graphics systems were used such as Ampex ADO, Abekas and K-Scope for live Digital video effects. Early proprietary 3D computer systems were also developed specifically for broadcast design such as the Bosch FGS-4000 which was used in the music video for Dire Straits Money for Nothing (song). The advent of more powerful desktop computers running Photoshop in the mid-90s drastically lowered the costs for producing digital graphics. With the reduced cost of producing motion graphics on a computer, the discipline has seen more widespread use. With the availability of desktop programs such as Adobe After Effects, Discreet Combustion, and Apple Motion, motion graphics have become increasingly accessible. Modern character generators (CG) from Aston Broadcast Systems and Chyron Corporation's incorporate motion graphics.<br />
-
-                        The term "motion graphics" was popularized by Trish and Chris Meyer's book about the use of Adobe After Effects, titled Creating Motion Graphics. This was the beginning of desktop applications which specialized in video production, but were not editing or 3D programs. These new programs collected together special effects, compositing, and color correction toolsets, and primarily came between edit and 3D in the production process. This "in-between" notion of motion graphics and the resulting style of animation is why sometimes it is referred to as 2.5D.<br />
+                       @Model.Content
                     </p>
                 </div>
                 <div class="article-footer">
                     <div class="center-container">
-                        <a href="">
+                        <a href="@Url.Action("Index","Article")">
                             <div class="mbtn-trans center-object">
                                 <img src="~/Content/img/page/layout/btn-back-hover_2x.png" />
                                 <img src="~/Content/img/page/layout/btn-back_2x.png" />

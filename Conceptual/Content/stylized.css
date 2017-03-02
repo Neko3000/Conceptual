@@ -40,6 +40,9 @@ time {
 .transparent-object {
   opacity: 0;
 }
+.transparent-object a {
+  pointer-events: none;
+}
 .overflow-hidden-container {
   overflow: hidden;
 }

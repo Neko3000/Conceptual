@@ -5,23 +5,26 @@
 <div class="body-container bg-navy">
     <div class="container">
         <div class="row">
-            <div class="col-lg-3 center-container">
-                <div class="single-article-block center-object">
-                    <img class="pin" src="~/Content/img/page/article/pin.png" />
-                    <div class="cover-img-box">
-                        <img src="~/Content/img/page/article/mg-ae.png" />
-                    </div>
-                    <div class="title-box">
-                        <a href="#"><h3>How to create Motion Graphics with Adobe AfterEffects?</h3></a>
-                    </div>
-                    <div class="short-description-box">
-                        <p>The tutorial for learning techniques in Motion Graphics</p>
-                    </div>
-                    <div class="category-time-box">
-                        <time>Tutorial / 2017.1.12</time>
+            @foreach (var article in Model.Articles)
+            {
+                <div class="col-lg-3 center-container">
+                    <div class="single-article-block center-object">
+                        <img class="pin" src="~/Content/img/page/article/pin.png" />
+                        <div class="cover-img-box">
+                            <img src="@article.CoverImgUrl" />
+                        </div>
+                        <div class="title-box">
+                            <a href="@Url.Action("Detail","Article", new { id=article.Id })"><h3>@article.Title</h3></a>
+                        </div>
+                        <div class="short-description-box">
+                            <p>@article.ShortDescription</p>
+                        </div>
+                        <div class="category-time-box">
+                            <time>@article.Category.Name / @article.PostTime.ToShortDateString()</time>
+                        </div>
                     </div>
                 </div>
-            </div>
+            }
         </div>
         @Html.Partial("_Pager", Model.PagerPartialViewModel)
     </div>

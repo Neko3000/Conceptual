@@ -11,6 +11,7 @@ using Conceptual.ViewModels;
 
 namespace Conceptual.Controllers
 {
+    [Authorize]
     public class ArticleManageController : Controller
     {
         private ConceptualDbContext db = new ConceptualDbContext();

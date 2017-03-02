@@ -58,7 +58,7 @@ namespace Conceptual.Controllers
         public ActionResult Login(string returnUrl)
         {
             ViewBag.ReturnUrl = returnUrl;
-            return View();
+            return View("~/Views/Shared/_ManageLogin.cshtml");
         }
 
         //
@@ -392,7 +392,7 @@ namespace Conceptual.Controllers
         public ActionResult LogOff()
         {
             AuthenticationManager.SignOut(DefaultAuthenticationTypes.ApplicationCookie);
-            return RedirectToAction("Index", "Home");
+            return RedirectToAction("Index", "Article");
         }
 
         //

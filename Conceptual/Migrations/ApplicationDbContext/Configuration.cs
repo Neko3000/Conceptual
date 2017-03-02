@@ -1,4 +1,4 @@
-namespace Conceptual.Migrations.ApplicationDbContext
+namespace Conceptual.Migrations
 {
     using System;
     using System.Data.Entity;
@@ -9,7 +9,7 @@ namespace Conceptual.Migrations.ApplicationDbContext
     {
         public Configuration()
         {
-            AutomaticMigrationsEnabled = false;
+            AutomaticMigrationsEnabled = true;
         }
 
         protected override void Seed(Conceptual.Models.ApplicationDbContext context)

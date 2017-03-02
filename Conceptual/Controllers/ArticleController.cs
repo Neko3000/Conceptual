@@ -6,6 +6,7 @@ using System.Web.Mvc;
 using Conceptual.Models;
 using Conceptual.ViewModels;
 using PagedList;
+using System.Net;
 
 namespace Conceptual.Controllers
 {
@@ -30,9 +31,31 @@ namespace Conceptual.Controllers
         }
 
         // GET: Article Detail
-        public ActionResult Detail()
+        public ActionResult Detail(int? id)
         {
-            return View();
+            var article = db.Articles.Find(id);
+            if (id == null)
+            {
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+            }
+            if (article == null)
+            {
+                return HttpNotFound();
+            }
+            var vm = new ArticleDetailViewModel
+            {
+                Id=article.Id,
+                Title=article.Title,
+                CoverImgUrl=article.CoverImgUrl,
+                ShortDescription=article.ShortDescription,
+                Content=article.Content,
+                UrlSlug=article.UrlSlug,
+                PostTime=article.PostTime,
+                ModifyTime=article.ModifyTime,
+
+                Category=article.Category
+            };
+            return View(vm);
         }
 
         public ActionResult PagerPartialView(int currentPage,int totalPage)

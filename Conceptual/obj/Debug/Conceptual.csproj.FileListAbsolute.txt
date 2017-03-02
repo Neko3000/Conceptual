@@ -82,3 +82,7 @@ H:\VisualStudioProjects\ASP.NET\Conceptual\Conceptual\obj\Debug\Conceptual.dll
 H:\VisualStudioProjects\ASP.NET\Conceptual\Conceptual\obj\Debug\Conceptual.pdb
 H:\VisualStudioProjects\ASP.NET\Conceptual\Conceptual\obj\Debug\Conceptual.Migrations.ConceptualDbContext.InitialDatabaseCreation.resources
 H:\VisualStudioProjects\ASP.NET\Conceptual\Conceptual\obj\Debug\Conceptual.csproj.GenerateResource.Cache
+H:\VisualStudioProjects\ASP.NET\Conceptual\Conceptual\bin\PagedList.dll
+H:\VisualStudioProjects\ASP.NET\Conceptual\Conceptual\bin\PagedList.Mvc.dll
+H:\VisualStudioProjects\ASP.NET\Conceptual\Conceptual\bin\PagedList.xml
+H:\VisualStudioProjects\ASP.NET\Conceptual\Conceptual\bin\PagedList.Mvc.xml
