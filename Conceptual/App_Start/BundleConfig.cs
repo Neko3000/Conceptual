@@ -1,5 +1,6 @@
 ﻿using System.Web;
 using System.Web.Optimization;
+using Conceptual.ExternalClasses;
 
 namespace Conceptual
 {
@@ -30,7 +31,7 @@ namespace Conceptual
             bundles.Add(new StyleBundle("~/Content/fontawesome").Include(
                       "~/Content/font-awesome.min.css"));
 
-            bundles.Add(new StyleBundle("~/Content/bracket/bracketStyle").Include(
+            bundles.Add(new LicensedStyleBundle("~/Content/bracket/bracketStyle").Include(
                 "~/Content/bracket/css/bootstrap.min.css",
                 "~/Content/bracket/css/bootstrap-override.css",
                 "~/Content/bracket/css/weather-icons.min.css",
@@ -80,7 +81,6 @@ namespace Conceptual
 
                       "~/Content/bracket/js/custom.js"
                       ));
-                BundleTable.EnableOptimizations = true;
         }
     }
 }
