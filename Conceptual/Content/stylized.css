@@ -226,6 +226,17 @@ footer .constructor .sub-prime {
   margin-top: 103px;
   display: inline-block;
 }
+@media (max-width: 768px) {
+  .mpager .mpager-arrow-left {
+    padding: 10px 11px;
+  }
+  .mpager .mpager-arrow-right {
+    padding: 10px 11px;
+  }
+  .mpager .mpager-arrow-num {
+    padding: 11px 12px;
+  }
+}
 .mpager .mpager-arrow-left {
   padding: 10px 22px;
   display: inline-block;
@@ -266,6 +277,7 @@ footer .constructor .sub-prime {
 .single-article-block {
   position: relative;
   padding: 1px 8px;
+  margin: 20px auto;
   height: 360px;
   width: 263px;
   background-color: white;

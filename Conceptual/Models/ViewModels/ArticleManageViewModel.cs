@@ -36,9 +36,6 @@ namespace Conceptual.ViewModels
 
     public class ArticleManageCreateViewModel
     {
-        [Required]
-        [Display(Name = "ID")]
-        public int Id { get; set; }
         [Display(Name = "Title")]
         public string Title { get; set; }
         [Display(Name = "Cover Url")]

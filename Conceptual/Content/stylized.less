@@ -283,6 +283,18 @@ footer{
 .mpager{
     margin-top:103px;
     display:inline-block;
+    @media(max-width:768px)
+    {
+        .mpager-arrow-left{
+            padding:10px 11px;
+        }
+        .mpager-arrow-right{
+            padding:10px 11px;
+        }
+        .mpager-arrow-num{
+            padding:11px 12px;
+        }
+    }
     .mpager-arrow-left{
         padding:10px 22px;
         display:inline-block;
@@ -326,6 +338,7 @@ footer{
 .single-article-block{
     position:relative;
     padding:1px 8px;
+    margin:20px auto;
 
     height:360px;
     width:263px;

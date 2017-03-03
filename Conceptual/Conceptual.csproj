@@ -204,6 +204,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\ArticleCategoryManageController.cs" />
     <Compile Include="Controllers\ArticleController.cs" />
     <Compile Include="Controllers\ArticleManageController.cs" />
     <Compile Include="Controllers\CollectionController.cs" />
@@ -226,6 +227,7 @@
     <Compile Include="Models\ConceptualDbContext.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\ViewModels\ArticleCategoryManageViewModel.cs" />
     <Compile Include="Models\ViewModels\ArticleManageViewModel.cs" />
     <Compile Include="Models\ViewModels\ArticleViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -451,6 +453,11 @@
     <Content Include="Views\ArticleManage\Index - Copy.cshtml" />
     <Content Include="Views\Shared\_Pager.cshtml" />
     <Content Include="Views\Shared\_ManageLogin.cshtml" />
+    <Content Include="Views\ArticleCategoryManage\Create.cshtml" />
+    <Content Include="Views\ArticleCategoryManage\Delete.cshtml" />
+    <Content Include="Views\ArticleCategoryManage\Details.cshtml" />
+    <Content Include="Views\ArticleCategoryManage\Edit.cshtml" />
+    <Content Include="Views\ArticleCategoryManage\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Content\bracket\css\codemirror\" />

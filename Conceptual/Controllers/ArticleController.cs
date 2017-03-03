@@ -22,10 +22,12 @@ namespace Conceptual.Controllers
             var pageSize = 12;
             var pageNumber = page ?? 1;
             var singlePageModels = articles.ToPagedList(pageNumber, pageSize);
+            var totoalPageNumber = articles.Count / pageSize + 1;
+
             var vm = new ArticleListViewModel
             {
                 Articles = singlePageModels,
-                PagerPartialViewModel=new PagerPartialViewModel { CurrentPage=pageNumber,TotalPage=articles.Count }
+                PagerPartialViewModel=new PagerPartialViewModel { CurrentPage=pageNumber,TotalPage=totoalPageNumber }
             };
             return View(vm);
         }
