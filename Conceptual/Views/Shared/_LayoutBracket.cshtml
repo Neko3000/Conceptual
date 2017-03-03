@@ -9,7 +9,10 @@
 
     <title>@ViewBag.Title - RabbitHouse System</title>
 
-    @Styles.Render("~/Content/bracket/bracketStyle")
+    @Styles.Render("~/Content/bracket/bracketStyleBootstrap")
+    @Styles.Render("~/Content/bracket/bracketStylejQueryUI")
+    @Styles.Render("~/Content/bracket/bracketStyleComp")
+    @Styles.Render("~/Content/bracket/bracketStyleDefault")
 
     @* fontawesome new version *@
     @Styles.Render("~/Content/fontawesome")
@@ -619,8 +622,9 @@
 
     </section>
 
-
-    @Scripts.Render("~/bundles/bracket/bracketScript")
+    @Scripts.Render("~/bundles/bracket/bracketScriptjQuery")
+    @Scripts.Render("~/bundles/bracket/bracketScriptBootstrap")
+    @Scripts.Render("~/bundles/bracket/bracketScriptComp")
 
     @RenderSection("scripts", required: false)
 </body>

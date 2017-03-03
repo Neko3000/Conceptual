@@ -14,7 +14,10 @@
 
     <title>Bracket Responsive Bootstrap3 Admin</title>
 
-    @Styles.Render("~/Content/bracket/bracketStyle")
+    @Styles.Render("~/Content/bracket/bracketStyleBootstrap")
+    @Styles.Render("~/Content/bracket/bracketStylejQueryUI")
+    @Styles.Render("~/Content/bracket/bracketStyleComp")
+    @Styles.Render("~/Content/bracket/bracketStyleDefault")
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -84,7 +87,9 @@
 
     </section>
 
-    @Scripts.Render("~/bundles/bracket/bracketScript")
+    @Scripts.Render("~/bundles/bracket/bracketScriptjQuery")
+    @Scripts.Render("~/bundles/bracket/bracketScriptBootstrap")
+    @Scripts.Render("~/bundles/bracket/bracketScriptComp")
 
     <script>
     jQuery(document).ready(function(){
