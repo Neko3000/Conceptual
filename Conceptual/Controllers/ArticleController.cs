@@ -17,12 +17,12 @@ namespace Conceptual.Controllers
 
         public ActionResult Index(int? page)
         {
-            var articles = db.Articles.ToList();
+            var articles = db.Articles.OrderByDescending(a=>a.PostTime).ToList();
 
-            var pageSize = 12;
+            var pageSize = 8;
             var pageNumber = page ?? 1;
             var singlePageModels = articles.ToPagedList(pageNumber, pageSize);
-            var totoalPageNumber = articles.Count / pageSize + 1;
+            var totoalPageNumber = ( articles.Count-1 ) / pageSize + 1;
 
             var vm = new ArticleListViewModel
             {

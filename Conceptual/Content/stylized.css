@@ -388,6 +388,11 @@ footer .constructor .sub-prime {
 .article .article-body {
   margin-bottom: 117px;
 }
+.article .article-body img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 .article .article-body p {
   text-align: left;
   font-family: 'Microsoft YaHei', Arial;

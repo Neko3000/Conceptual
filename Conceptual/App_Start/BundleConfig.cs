@@ -75,6 +75,11 @@ namespace Conceptual
                       "~/Content/bracket/js/wysihtml5-0.3.0.min.js"
                    ));
 
+            bundles.Add(new ScriptBundle("~/bundles/bracket/bracketWysiwygEditor").Include(
+                      "~/Content/bracket/js/bootstrap-wysihtml5.js",
+                      "~/Content/bracket/js/wysihtml5-0.3.0.min.js"
+                   ));
+
             bundles.Add(new ScriptBundle("~/bundles/bracket/bracketScriptComp").Include(
                        "~/Content/bracket/js/toggles.min.js",
                        "~/Content/bracket/js/retina.min.js",
