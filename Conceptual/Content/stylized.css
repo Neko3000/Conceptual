@@ -141,7 +141,8 @@ time {
   font-family: "Myriad Pro";
   font-size: 16px;
 }
-.navbar-glass ul > li > a:hover {
+.navbar-glass ul > li > a:hover,
+.navbar-glass ul > li > a:focus {
   background-color: transparent;
 }
 @media (max-width: 768px) {
@@ -226,17 +227,6 @@ footer .constructor .sub-prime {
   margin-top: 103px;
   display: inline-block;
 }
-@media (max-width: 768px) {
-  .mpager .mpager-arrow-left {
-    padding: 10px 11px;
-  }
-  .mpager .mpager-arrow-right {
-    padding: 10px 11px;
-  }
-  .mpager .mpager-arrow-num {
-    padding: 11px 12px;
-  }
-}
 .mpager .mpager-arrow-left {
   padding: 10px 22px;
   display: inline-block;
@@ -246,6 +236,11 @@ footer .constructor .sub-prime {
   width: 9px;
   height: 17px;
 }
+@media (max-width: 768px) {
+  .mpager .mpager-arrow-left {
+    padding: 10px 10px;
+  }
+}
 .mpager .mpager-arrow-right {
   padding: 10px 22px;
   display: inline-block;
@@ -254,6 +249,11 @@ footer .constructor .sub-prime {
 .mpager .mpager-arrow-right img {
   width: 9px;
   height: 17px;
+}
+@media (max-width: 768px) {
+  .mpager .mpager-arrow-right {
+    padding: 10px 10px;
+  }
 }
 .mpager .mpager-num {
   display: inline-block;
@@ -265,6 +265,11 @@ footer .constructor .sub-prime {
   font-family: 'Myriad Pro', Arial;
   font-size: 16px;
   color: white;
+}
+@media (max-width: 768px) {
+  .mpager .mpager-num {
+    padding: 10px 10px;
+  }
 }
 .mpager .mpager-center-img {
   padding: 0 10px;

@@ -183,7 +183,7 @@ h1,h2,h3,h4,h5,p,span,time{
                 background-color: transparent;
                 font-family: "Myriad Pro";
                 font-size: 16px;
-                &:hover{
+                &:hover,&:focus{
                       background-color: transparent;
                 }
             }
@@ -283,18 +283,7 @@ footer{
 .mpager{
     margin-top:103px;
     display:inline-block;
-    @media(max-width:768px)
-    {
-        .mpager-arrow-left{
-            padding:10px 11px;
-        }
-        .mpager-arrow-right{
-            padding:10px 11px;
-        }
-        .mpager-arrow-num{
-            padding:11px 12px;
-        }
-    }
+
     .mpager-arrow-left{
         padding:10px 22px;
         display:inline-block;
@@ -302,6 +291,10 @@ footer{
         img{
             width:9px;
             height:17px;
+        }
+        @media(max-width:768px)
+        {
+            padding:10px 10px;
         }
     }
      .mpager-arrow-right{
@@ -311,6 +304,10 @@ footer{
         img{
             width:9px;
             height:17px;
+        }
+        @media(max-width:768px)
+        {
+            padding:10px 10px;
         }
     }
 
@@ -324,6 +321,10 @@ footer{
              font-size:16px;
              color:white;
          }
+         @media(max-width:768px)
+        {
+            padding:10px 10px;
+        }
      }
      .mpager-center-img{
          padding:0 10px;
