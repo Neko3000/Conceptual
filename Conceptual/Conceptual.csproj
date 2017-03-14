@@ -327,6 +327,10 @@
     <Content Include="Content\img\page\collection\compass_2x.png" />
     <Content Include="Content\img\page\article\mg-ae.png" />
     <Content Include="Content\img\page\article\pin.png" />
+    <Content Include="Content\img\page\collection\design_2x.png" />
+    <Content Include="Content\img\page\collection\div_2x.png" />
+    <Content Include="Content\img\page\collection\flat_2x.png" />
+    <Content Include="Content\img\page\collection\video_2x.png" />
     <Content Include="Content\img\page\layout\board-effiel.png" />
     <Content Include="Content\img\page\layout\btn-back-hover_2x.png" />
     <Content Include="Content\img\page\layout\btn-back_2x.png" />

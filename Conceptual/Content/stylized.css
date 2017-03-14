@@ -417,9 +417,13 @@ footer .constructor .sub-prime {
 .single-tutor-category-block .tutor-category-header .tutor-category-img {
   margin-bottom: 32px;
 }
-.single-tutor-category-block .tutor-category-header .tutor-category-img img {
+.single-tutor-category-block .tutor-category-header .tutor-category-img .compass {
   width: 52px;
   height: 82px;
+}
+.single-tutor-category-block .tutor-category-header .tutor-category-img .div {
+  width: 65px;
+  height: 63px;
 }
 .single-tutor-category-block .tutor-category-header .tutor-category-title {
   margin-bottom: 20px;
