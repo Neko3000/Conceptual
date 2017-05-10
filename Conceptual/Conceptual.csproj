@@ -449,12 +449,7 @@
     <Content Include="Views\ArticleManage\Details.cshtml" />
     <Content Include="Views\ArticleManage\Edit.cshtml" />
     <Content Include="Views\ArticleManage\Index.cshtml" />
-    <Content Include="Views\ArticleManage\Create - Copy.cshtml" />
-    <Content Include="Views\ArticleManage\Delete - Copy.cshtml" />
-    <Content Include="Views\ArticleManage\Details - Copy.cshtml" />
-    <Content Include="Views\ArticleManage\Edit - Copy.cshtml" />
     <Content Include="Views\Shared\_LayoutBracket.cshtml" />
-    <Content Include="Views\ArticleManage\Index - Copy.cshtml" />
     <Content Include="Views\Shared\_Pager.cshtml" />
     <Content Include="Views\Shared\_ManageLogin.cshtml" />
     <Content Include="Views\ArticleCategoryManage\Create.cshtml" />
